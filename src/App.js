@@ -4,8 +4,10 @@ import router from './router/Route';
 
 function App() {
   return (
-    <div className="bg-slate-700 ">
-      <RouterProvider router={router} />
+    <div className="bg-gray-900">
+      <div className='max-w-screen-2xl mx-auto'>
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }

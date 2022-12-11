@@ -1,12 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Sidebar from './Sidebar';
+import Footer from '../components/Home/Footer/Footer';
+import Navbar from './Navbar';
 
 const Main = () => {
     return (
-        <div className='flex gap-6'>
-            <Sidebar></Sidebar>
-            <Outlet className='flex-1'></Outlet>
+        <div>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
