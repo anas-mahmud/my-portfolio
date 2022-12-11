@@ -24,13 +24,19 @@ const Navbar = () => {
 
                                     <li>
                                         <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
+                                            Projects
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
                                             About Me
                                         </Link>
                                     </li>
 
                                     <li>
                                         <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
-                                            Projects
+                                            Contact me
                                         </Link>
                                     </li>
 
