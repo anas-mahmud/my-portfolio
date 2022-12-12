@@ -1,8 +1,9 @@
 import React from 'react';
+import img from '../../images/img1.png';
 
 const Contact = () => {
     return (
-        <div>
+        <div className='mt-48'>
             <h1 className='text-3xl font-bold text-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent'>Contact Me</h1>
             <hr className='w-2/4 mx-auto my-5' />
             <h2 className='text-lg text-center'>I'm Junior Web Developer, If you want to give me some opportunity or <br /> have any queries, feel free to reach me.</h2>
@@ -11,9 +12,9 @@ const Contact = () => {
                     <div className="text-center">
                         <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
                     </div>
-                    <img src="https://cdn.dribbble.com/users/2069369/screenshots/4276636/call_center.gif" alt="" className="pr-4 h-52 md:h-64" />
+                    <img src={img} alt="" className="pr-4 h-full" />
                 </div>
-                <form novalidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
+                <form novalidate="" className="space-y-6 ng-untouched ng-pristine ng-valid mt-10">
                     <div>
                         <input id="name" type="text" placeholder="Your Name" className="w-full p-3 rounded-full dark:bg-gray-800" />
                     </div>
