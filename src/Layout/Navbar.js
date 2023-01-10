@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FiHome } from "react-icons/fi";
+import { FaRegUser } from "react-icons/fa";
+import { BiMessageSquareDetail } from "react-icons/bi";
+import { IoBookmarksOutline } from "react-icons/io5";
+import { FaPenNib } from "react-icons/fa";
 
 const Navbar = () => {
     return (
         <div className='bg-slate-800'>
             <header aria-label="Site Header" >
                 <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-                    <div className="flex h-16 items-center justify-between">
+                    <div className="flex flex-col items-center ">
                         <div className="md:flex md:items-center md:gap-12">
                             <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text lg:text-3xl font-extrabold text-transparent sm:text-5xl">
                                 iamanas
@@ -15,34 +20,30 @@ const Navbar = () => {
 
                         <div className="hidden md:block">
                             <nav aria-label="Site Nav">
-                                <ul className="flex items-center gap-6 text-sm">
+                                <ul className="flex flex-col gap-10">
                                     <li>
                                         <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
-                                            Home
+                                            <FiHome />
                                         </Link>
                                     </li>
-
                                     <li>
                                         <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
-                                            Projects
+                                            <IoBookmarksOutline />
                                         </Link>
                                     </li>
-
                                     <li>
                                         <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
-                                            About Me
+                                            <FaRegUser />
                                         </Link>
                                     </li>
-
                                     <li>
                                         <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
-                                            Contact me
+                                            <BiMessageSquareDetail />
                                         </Link>
                                     </li>
-
                                     <li>
                                         <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
-                                            Blog
+                                            <FaPenNib />
                                         </Link>
                                     </li>
                                 </ul>
@@ -56,7 +57,7 @@ const Navbar = () => {
                                 </a>
                             </div>
 
-                            <div className="block md:hidden">
+                            {/* <div className="block md:hidden">
                                 <button
                                     className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
                                 >
@@ -75,7 +76,7 @@ const Navbar = () => {
                                         />
                                     </svg>
                                 </button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

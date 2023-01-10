@@ -4,9 +4,9 @@ import Navbar from './Navbar';
 
 const Main = () => {
     return (
-        <div>
-            <Navbar></Navbar>
+        <div className='flex flex-row-reverse'>
             <Outlet></Outlet>
+            <Navbar></Navbar>
         </div>
     );
 };
