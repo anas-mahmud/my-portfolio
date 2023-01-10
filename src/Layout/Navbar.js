@@ -51,9 +51,9 @@ const Navbar = () => {
 
                         <div className="flex items-center gap-4">
                             <div className="sm:flex sm:gap-4">
-                                <Link className="rounded-md bg-gradient-to-r from-blue-500 to-purple-600 px-5 py-2.5 text-sm font-medium text-white shadow">
+                                <a href='https://drive.google.com/file/d/1i738VtBjLDH4JISkbcQLe0uVbcWYTjsE/view?usp=share_link' target='_blank' rel="noreferrer" className="rounded-md bg-gradient-to-r from-blue-500 to-purple-600 px-5 py-2.5 text-sm font-medium text-white shadow">
                                     Resume
-                                </Link>
+                                </a>
                             </div>
 
                             <div className="block md:hidden">
