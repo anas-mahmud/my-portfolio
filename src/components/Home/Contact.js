@@ -1,21 +1,23 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import img from '../../images/img1.png';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-    const form = useRef();
+    // const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
 
-        emailjs.sendForm('service_od7i7i1', 'template_s5mqyoq', form.current, '-SM6kA8l-iYTnGv9l')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
+    //     emailjs.sendForm('service_od7i7i1', 'template_s5mqyoq', form.current, '-SM6kA8l-iYTnGv9l')
+    //         .then((result) => {
+    //             console.log(result.text);
+    //         }, (error) => {
+    //             console.log(error.text);
+    //         });
+    // };
+
+    // ref={form} onSubmit={sendEmail} 
 
     return (
         <div className='mt-48'>
@@ -29,7 +31,7 @@ const Contact = () => {
                     </div>
                     <img src={img} alt="" className="pr-4 h-full" />
                 </div>
-                <form ref={form} onSubmit={sendEmail} className="space-y-6 ng-untouched ng-pristine ng-valid mt-10">
+                <form action="https://formsubmit.co/el/gukoho" method="POST" className="space-y-6 ng-untouched ng-pristine ng-valid mt-10">
                     <div>
                         <input id="name" name="user_name" type="text" placeholder="Your Name" className="w-full p-3 rounded-full dark:bg-gray-800" />
                     </div>
@@ -39,7 +41,7 @@ const Contact = () => {
                     <div>
                         <textarea id="message" name="message" rows="3" placeholder="Message" className="w-full p-3 rounded-xl dark:bg-gray-800" spellcheck="false"></textarea>
                     </div>
-                    <button type="submit" value="Send" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 dark:text-gray-900">Send Message</button>
+                    <button type="submit" value="Send" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 dark:text-gray-900">Send Message</button>
                 </form>
             </div>
         </div>
