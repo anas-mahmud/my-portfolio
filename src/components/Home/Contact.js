@@ -31,7 +31,7 @@ const Contact = () => {
                     </div>
                     <img src={img} alt="" className="pr-4 h-full" />
                 </div>
-                <form action="https://formsubmit.co/el/anasmahmud523@gmail.com" method="POST" className="space-y-6 ng-untouched ng-pristine ng-valid mt-10">
+                <form action="https://formsubmit.co/anasmahmud523@gmail.com" method="POST" className="space-y-6 ng-untouched ng-pristine ng-valid mt-10">
                     <div>
                         <input id="name" name="user_name" type="text" placeholder="Your Name" className="w-full p-3 rounded-full dark:bg-gray-800" />
                     </div>
