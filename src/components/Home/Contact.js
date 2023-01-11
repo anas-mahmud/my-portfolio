@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import img from '../../images/img1.png';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_od7i7i1', 'template_s5mqyoq', form.current, '-SM6kA8l-iYTnGv9l')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <div className='mt-48'>
             <h1 className='text-3xl font-bold text-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent'>Contact Me</h1>
@@ -14,17 +29,17 @@ const Contact = () => {
                     </div>
                     <img src={img} alt="" className="pr-4 h-full" />
                 </div>
-                <form novalidate="" className="space-y-6 ng-untouched ng-pristine ng-valid mt-10">
+                <form ref={form} onSubmit={sendEmail} className="space-y-6 ng-untouched ng-pristine ng-valid mt-10">
                     <div>
-                        <input id="name" type="text" placeholder="Your Name" className="w-full p-3 rounded-full dark:bg-gray-800" />
+                        <input id="name" name="user_name" type="text" placeholder="Your Name" className="w-full p-3 rounded-full dark:bg-gray-800" />
                     </div>
                     <div>
-                        <input id="email" type="email" placeholder="Email" className="w-full p-3 rounded-full dark:bg-gray-800" data-temp-mail-org="1" />
+                        <input id="email" type="email" name="user_email" placeholder="Email" className="w-full p-3 rounded-full dark:bg-gray-800" data-temp-mail-org="1" />
                     </div>
                     <div>
-                        <textarea id="message" rows="3" placeholder="Message" className="w-full p-3 rounded-xl dark:bg-gray-800" spellcheck="false"></textarea>
+                        <textarea id="message" name="message" rows="3" placeholder="Message" className="w-full p-3 rounded-xl dark:bg-gray-800" spellcheck="false"></textarea>
                     </div>
-                    <button type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 dark:text-gray-900">Send Message</button>
+                    <button type="submit" value="Send" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 dark:text-gray-900">Send Message</button>
                 </form>
             </div>
         </div>

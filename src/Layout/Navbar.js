@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className="nav flex flex-col h-[100vh] items-center justify-around">
 
                     <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text leading-none lg:text-3xl font-extrabold text-transparent sm:text-5xl">
-                        iam<br/>anas
+                        iam<br />anas
                     </h1>
 
                     <div className="">
