@@ -27,7 +27,7 @@ const Navbar = () => {
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:-translate-y-2">
+                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:translate-y-2">
                                     <FiHome />
                                 </Link>
                             </Tooltip>
@@ -37,7 +37,7 @@ const Navbar = () => {
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:-translate-y-2">
+                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:translate-y-2">
                                     <IoBookmarksOutline />
                                 </Link>
                             </Tooltip>
@@ -47,7 +47,7 @@ const Navbar = () => {
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:-translate-y-2">
+                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:translate-y-2">
                                     <FaRegUser />
                                 </Link>
                             </Tooltip>
@@ -57,7 +57,7 @@ const Navbar = () => {
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:-translate-y-2">
+                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:translate-y-2">
                                     <BiMessageSquareDetail />
                                 </Link>
                             </Tooltip>
