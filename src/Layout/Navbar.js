@@ -21,7 +21,7 @@ const Navbar = () => {
 
                     <div className="">
                         <ul className="flex flex-col gap-10 text-3xl">
-                            <Tooltip className='px-2 py-[2px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Home" placement="right-start"
+                            <Tooltip className='px-2 py-[3px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Home" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
@@ -31,7 +31,7 @@ const Navbar = () => {
                                 </Link>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[2px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Projects" placement="right-start"
+                            <Tooltip className='px-2 py-[3px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Projects" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
@@ -41,7 +41,7 @@ const Navbar = () => {
                                 </Link>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[2px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="About Me" placement="right-start"
+                            <Tooltip className='px-2 py-[3px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="About Me" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
@@ -51,7 +51,7 @@ const Navbar = () => {
                                 </Link>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[2px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Contact" placement="right-start"
+                            <Tooltip className='px-2 py-[3px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Contact" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
@@ -66,7 +66,7 @@ const Navbar = () => {
                     <div className="">
                         <ul className="flex flex-col gap-10 text-3xl">
 
-                            <Tooltip className='px-2 py-[2px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Resume" placement="right-start"
+                            <Tooltip className='px-2 py-1 ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Resume" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
@@ -76,7 +76,7 @@ const Navbar = () => {
                                 </a>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[2px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="GitHub" placement="right-start"
+                            <Tooltip className='px-2 py-1 ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="GitHub" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
@@ -86,7 +86,7 @@ const Navbar = () => {
                                 </a>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[2px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Linkedin" placement="right-start"
+                            <Tooltip className='px-2 py-1 ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Linkedin" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
@@ -96,7 +96,7 @@ const Navbar = () => {
                                 </a>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[2px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Blogs" placement="right-start"
+                            <Tooltip className='px-2 py-1 ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Blogs" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
