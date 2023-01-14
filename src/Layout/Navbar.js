@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css'
 import { Link } from 'react-router-dom';
 import { FiHome } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa";
@@ -21,87 +22,87 @@ const Navbar = () => {
 
                     <div className="">
                         <ul className="flex flex-col gap-10 text-3xl">
-                            <Tooltip className='px-2 py-[3px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Home" placement="right-start"
+                            <Tooltip className='component-icon-tooltip' content="Home" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
-                                    <FiHome className='' />
+                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:-translate-y-2">
+                                    <FiHome />
                                 </Link>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[3px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Projects" placement="right-start"
+                            <Tooltip className='component-icon-tooltip' content="Projects" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
+                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:-translate-y-2">
                                     <IoBookmarksOutline />
                                 </Link>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[3px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="About Me" placement="right-start"
+                            <Tooltip className='component-icon-tooltip' content="About Me" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
+                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:-translate-y-2">
                                     <FaRegUser />
                                 </Link>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-[3px] ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Contact" placement="right-start"
+                            <Tooltip className='component-icon-tooltip' content="Contact" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75">
+                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:-translate-y-2">
                                     <BiMessageSquareDetail />
                                 </Link>
                             </Tooltip>
                         </ul>
                     </div>
 
-                    <div className="">
-                        <ul className="flex flex-col gap-10 text-3xl">
+                    <div>
+                        <ul className="flex flex-col gap-10 text-3xl social-link">
 
-                            <Tooltip className='px-2 py-1 ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Resume" placement="right-start"
+                            <Tooltip className='social-tooltip' content="Resume" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <a className="text-gray-300 font-semibold transition text-green-300/60" href='https://drive.google.com/file/d/1i738VtBjLDH4JISkbcQLe0uVbcWYTjsE/view?usp=share_link' target='_blank' rel="noopener noreferrer">
+                                <a href='https://drive.google.com/file/d/1i738VtBjLDH4JISkbcQLe0uVbcWYTjsE/view?usp=share_link' target='_blank' rel="noopener noreferrer">
                                     <TbDownload />
                                 </a>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-1 ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="GitHub" placement="right-start"
+                            <Tooltip className='social-tooltip' content="GitHub" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <a className="text-gray-300 font-semibold transition text-green-300/60" href='https://github.com/anas-mahmud' target={'_blank'} rel="noopener noreferrer">
+                                <a href='https://github.com/anas-mahmud' target={'_blank'} rel="noopener noreferrer">
                                     <FaGithub />
                                 </a>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-1 ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Linkedin" placement="right-start"
+                            <Tooltip className='social-tooltip' content="Linkedin" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <a className="text-gray-300 font-semibold transition text-green-300/60" href='https://www.linkedin.com/in/aanas-mahmud/' target={'_blank'} rel="noopener noreferrer">
+                                <a href='https://www.linkedin.com/in/aanas-mahmud/' target={'_blank'} rel="noopener noreferrer">
                                     <TfiLinkedin />
                                 </a>
                             </Tooltip>
 
-                            <Tooltip className='px-2 py-1 ml-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded' content="Blogs" placement="right-start"
+                            <Tooltip className='social-tooltip' content="Blogs" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 text-2xl font-semibold transition text-green-300/60">
+                                <Link className="text-2xl">
                                     <FaPenNib />
                                 </Link>
                             </Tooltip>

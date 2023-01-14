@@ -1,0 +1,23 @@
+.component-icon-tooltip {
+    /* px-2 py-[3px] ml-4 -mt-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded */
+    background-color: rgb(13, 148, 136, 0.3);
+    color: rgba(209, 213, 219);
+    border-radius: 0.25rem;
+    padding: 3px 8px;
+    margin: -12px 0 0 16px;
+}
+
+.social-link a {
+    /* text-gray-300 font-semibold transition text-green-300/60 */
+    font-weight: 600;
+    color: rgba(146, 255, 186, 0.6);
+}
+
+.social-tooltip {
+    /* px-2 py-1 ml-3 -mt-2 bg-teal-600 bg-opacity-30 text-gray-300 rounded */
+    background-color: rgb(13, 148, 136, 0.3);
+    color: rgb(209, 213, 219);
+    border-radius: 0.25rem;
+    padding: 4px 8px;
+    margin: -8px 0 0 12px;
+}
