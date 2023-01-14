@@ -67,7 +67,7 @@ const Navbar = () => {
                     <div>
                         <ul className="flex flex-col gap-10 text-3xl social-link">
 
-                            <Tooltip className='social-tooltip' content="Resume" placement="right-start"
+                            <Tooltip className='social-tooltip' content="Download Resume" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
@@ -97,7 +97,7 @@ const Navbar = () => {
                                 </a>
                             </Tooltip>
 
-                            <Tooltip className='social-tooltip' content="Blogs" placement="right-start"
+                            <Tooltip className='social-tooltip' content="Visit Blogs" placement="right-start"
                                 animate={{
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
