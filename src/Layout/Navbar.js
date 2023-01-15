@@ -12,7 +12,7 @@ import { Tooltip } from "@material-tailwind/react";
 
 const Navbar = () => {
     return (
-        <div className='bg-slate-800'>
+        <div className='color'>
             <div className="sticky top-0 h-fit hidden lg:block px-4 sm:px-6 lg:px-8">
                 <div className="nav flex flex-col h-[100vh] items-center justify-around">
 

@@ -1,3 +1,7 @@
+.color {
+    background-color: #100f11;
+}
+
 .component-icon-tooltip {
     /* px-2 py-[3px] ml-4 -mt-3 bg-teal-600 bg-opacity-30 text-gray-300 rounded */
     background-color: rgb(13, 148, 136, 0.3);
