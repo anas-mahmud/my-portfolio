@@ -4,7 +4,6 @@ import { IoHome } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { BsChatText } from "react-icons/bs";
 import { IoBookmarksOutline } from "react-icons/io5";
-import { NavLink } from 'react-router-dom';
 
 const MobileNav = () => {
     return (
@@ -14,23 +13,17 @@ const MobileNav = () => {
                     <IoHome className='icon' />
                 </a>
 
-                <NavLink className='navigation-links'>
-                    <a href='#project' >
-                        <IoBookmarksOutline className='icon' />
-                    </a>
-                </NavLink>
+                <a href='/#projects' className='navigation-links'>
+                    <IoBookmarksOutline className='icon' />
+                </a>
 
-                <NavLink className='navigation-links'>
-                    <a href='#about' >
-                        <FaRegUser className='icon' />
-                    </a>
-                </NavLink>
+                <a href='#about' className='navigation-links'>
+                    <FaRegUser className='icon' />
+                </a>
 
-                <NavLink className='navigation-links'>
-                    <a href='#contact' >
-                        <BsChatText className='icon' />
-                    </a>
-                </NavLink>
+                <a href='/#contact' className='navigation-links'>
+                    <BsChatText className='icon' />
+                </a>
             </nav>
         </div>
     );

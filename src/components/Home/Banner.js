@@ -8,7 +8,7 @@ const Banner = () => {
                     <div class="mx-auto max-w-full text-start">
                         <span>Hello i am</span>
                         <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text lg:text-5xl font-extrabold text-transparent">
-                            Anas Ibne Ali.
+                            Anas Mahmud.
                         </h1>
                         <span class="sm:block bg-gradient-to-r from-purple-600 via-green-300 to-blue-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">Front-End Developer.</span>
 

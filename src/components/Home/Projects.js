@@ -7,7 +7,7 @@ import learnify from '../../images/learnify.png';
 
 const Projects = () => {
     return (
-        <div>
+        <div id='projects'>
             <h1 className='text-3xl font-bold text-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent'>Projects</h1>
             <hr className='w-2/3 mx-auto my-5' />
             <p className='text-center'>I already worked on may projects. Some websites are not interesting and some <br /> websites are very beautiful. Some of them are given below.</p>
