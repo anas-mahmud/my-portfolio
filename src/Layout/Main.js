@@ -5,12 +5,12 @@ import Navbar from './Navbar';
 
 const Main = () => {
     return (
-        <div className='flex flex-row-reverse'>
+        <div className='flex'>
+            <Navbar></Navbar>
             <div>
                 <Outlet></Outlet>
                 <MobileNav />
             </div>
-            <Navbar></Navbar>
         </div>
     );
 };
