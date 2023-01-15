@@ -5,7 +5,7 @@ import Projects from './Projects';
 
 const Home = () => {
     return (
-        <div>
+        <div id='#home'>
             <Banner />
             <Projects />
             <Contact />

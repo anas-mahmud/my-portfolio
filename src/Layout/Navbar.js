@@ -27,9 +27,9 @@ const Navbar = () => {
                                     mount: { scale: 1, y: 0 },
                                     unmount: { scale: 0, y: 25 },
                                 }}>
-                                <Link className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:translate-y-2">
+                                <a href='/#home' className="text-gray-300 font-semibold transition hover:text-green-300/75 hover:translate-x-2 hover:translate-y-2">
                                     <FiHome />
-                                </Link>
+                                </a>
                             </Tooltip>
 
                             <Tooltip className='component-icon-tooltip' content="Projects" placement="right-start"
@@ -107,31 +107,9 @@ const Navbar = () => {
                                 </Link>
                             </Tooltip>
                         </ul>
-
-                        {/* <div className="block md:hidden">
-                                <button
-                                    className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-5 w-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M4 6h16M4 12h16M4 18h16"
-                                        />
-                                    </svg>
-                                </button>
-                            </div> */}
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

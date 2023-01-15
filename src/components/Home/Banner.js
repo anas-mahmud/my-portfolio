@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className=''>
+        <div id='home' className=''>
             <section class="bg-gray-900 text-white">
                 <div class="mx-auto max-w-screen-2xl px-4 lg:flex lg:h-screen lg:items-center">
                     <div class="mx-auto max-w-full text-start">
