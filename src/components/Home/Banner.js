@@ -1,11 +1,12 @@
 import React from 'react';
+import Typical from 'react-typical'
 
 const Banner = () => {
     return (
         <section id='home'>
             <div class="w-full mx-auto pl:0  pt-16 h-[100vh] lg:h-screen">
 
-                <div class="lg:h-[60vh] h-[40vh] flex items-center lg:pl-96 md:pl-52 px-16">
+                <div class="lg:h-[60vh] h-[40vh] flex items-center lg:pl-80 md:pl-44 px-16">
                     <div>
                         <h1 class="lg:text-5xl text-3xl font-bold font-mono mb-3">Anas Mahmud</h1>
                         <div className='flex align-middle'>
@@ -14,7 +15,18 @@ const Banner = () => {
                         </div>
                         <h1 className='lg:text-7xl text-5xl font-bold flex'>
                             <span>+</span>
-                            <span>Front-End Developer.</span>
+                            <span>
+                                <Typical
+                                    loop={Infinity}
+                                    wrapper="h2"
+                                    steps={[
+                                        'Designer', 2000,
+                                        'Creator', 2000,
+                                        'Visualizer', 2000,
+                                        'Engineer', 2000,
+                                    ]}
+                                />
+                            </span>
                         </h1>
                     </div>
                 </div>
