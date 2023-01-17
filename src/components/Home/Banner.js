@@ -20,10 +20,9 @@ const Banner = () => {
                                     loop={Infinity}
                                     wrapper="h2"
                                     steps={[
-                                        'Designer', 2000,
                                         'Creator', 2000,
                                         'Visualizer', 2000,
-                                        'Engineer', 2000,
+                                        'Hard worker', 2000,
                                     ]}
                                 />
                             </span>
