@@ -33,13 +33,13 @@ const Contact = () => {
                     <img src={img} alt="" className="pr-4 h-full" />
                 </div>
                 <form ref={form} onSubmit={sendEmail} className="space-y-6 ng-untouched ng-pristine ng-valid mt-10">
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <input id="name" name="user_name" type="text" placeholder="Your Name" className="w-full p-3 rounded-full dark:bg-gray-800" required />
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <input id="email" type="email" name="user_email" placeholder="Email" className="w-full p-3 rounded-full dark:bg-gray-800" data-temp-mail-org="1" required />
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <textarea id="message" name="message" rows="3" placeholder="Message" className="w-full p-3 rounded-xl dark:bg-gray-800" spellcheck="false" required></textarea>
                     </div>
                     <button disabled={disable ? true : false} type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 dark:text-gray-900">Send Message</button>
